@@ -23,7 +23,7 @@ const signup = async (req, res) => {
       password: hashedPassword,
     });
 
-    return res.status(201).json({ message: "User registered successfully" });
+    return res.status(201).json({ message: "User registration successful" });
   } catch (error) {
     console.error("Error during signup:", error);
     return res.status(500).json({ message: "Internal server error" });
